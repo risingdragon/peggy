@@ -1,0 +1,624 @@
+#################################################################################################
+# ショートカットキー定義ファイル 
+# NOTE:コマンド名,[キー定義,...]   の順に記述
+# カンマ区切りで、コマンド名は必須。キー定義は複数記述可能
+# コマンドごとに一行ずつ記述。但し、一行は2000文字以内(コメント含む)
+#################################################################################################
+NewFile, Ctrl+N                                   #ファイル - 新規作成                               ,新規にファイルを作成する
+NewFileFromTemplate                               #ファイル - テンプレートから新規作成               ,テンプレートから新規ファイルを作成する
+OpenFile, Ctrl+O                                  #ファイル - 開く                                   ,既存のファイルを開く
+ReopenFileShiftJIS                                #ファイル - Shift JISとして開き直す                ,作業中のファイルをShift JISとして開き直す
+ReopenFileEUC                                     #ファイル - EUCとして開き直す                      ,作業中のファイルをEUCとして開き直す
+ReopenFileJIS                                     #ファイル - JISとして開き直す                      ,作業中のファイルをJISとして開き直す
+ReopenFileUTF7                                    #ファイル - UTF-7として開き直す                    ,作業中のファイルをUTF-7として開き直す
+ReopenFileUTF8                                    #ファイル - UTF-8として開き直す                    ,作業中のファイルをUTF-8として開き直す
+ReopenFileUnicode                                 #ファイル - Unicodeとして開き直す                  ,作業中のファイルをUnicodeとして開き直す
+OpenFileDirectly, Ctrl+Shift+O                    #ファイル - ダイレクトオープン                     ,カーソル位置にあるパスを使ってそのファイルを開く
+OpenRelatedFile                                   #ファイル - 関連ファイルを開く                     ,編集中のファイルと関連するファイルを開く
+OpenIncludeFile                                   #ファイル - インクルードファイルを開く             ,編集中のファイルにインクルードされているファイルを開く
+CloseFile                                         #ファイル - 閉じる                                 ,作業中のファイルを閉じる
+SaveFile, Ctrl+S                                  #ファイル - 上書き保存                             ,作業中のファイルを保存する
+SaveFileAs                                        #ファイル - 名前を付けて保存                       ,作業中のファイルに名前を付けて保存する
+SaveAllFiles                                      #ファイル - すべて保存                             ,すべてのファイルを保存する
+Print, Ctrl+P                                     #ファイル - 印刷                                   ,作業中のファイルを印刷する
+PrintDirectly                                     #ファイル - ダイレクト印刷                         ,作業中のファイルをダイレクトに印刷する
+PrintPreview                                      #ファイル - 印刷プレビュー                         ,印刷イメージをフルスクリーンで表示する
+PrintOption                                       #ファイル - 印刷オプション                         ,印刷オプションダイアログボックスを開く
+PrinterSetup                                      #ファイル - プリンタの設定                         ,プリンタ/印刷設定を変更する
+History                                           #ファイル - ヒストリ                               ,ファイルヒストリダイアログボックスからファイルを開く
+BrowseURL, Ctrl+B                                 #ファイル - ブラウザを開く                         ,カーソル位置のURLに従いブラウザやメーラーを開く
+ExecuteScript                                     #ファイル - スクリプト実行                         ,スクリプトファイルを実行する
+OpenFileExternally                                #ファイル - 関連アプリケーション起動               ,作業中のファイルを関連アプリケーションで開く
+ExitPeggy                                         #ファイル - Peggy Pro for PHPの終了                ,Peggy Pro for PHPを終了し、ファイルの保存を指示する
+Undo, Ctrl+Z                                      #編集 - 元に戻す                                   ,直前に行った動作を元に戻す
+Redo, Ctrl+Y                                      #編集 - やり直し                                   ,直前に行った動作を繰り返す
+UndoList                                          #編集 - 編集操作リスト                             ,編集操作リストを表示します
+Reconvert                                         #編集 - 再変換                                     ,選択範囲またはカーソル位置の単語を再変換します
+Cut, Ctrl+X, Shift+Delete                         #編集 - 切り取り                                   ,選択範囲を切り取ってクリップボードに保存する
+CutAppend, Ctrl+Shift+X                           #編集 - 切り取って追加                             ,選択範囲を切り取ってクリップボードへ追加する
+CutWord                                           #編集 - 単語切り取り                               ,カーソル位置の単語をクリップボードへ切り取る
+CutWordAppend                                     #編集 - 単語を切り取って追加                       ,カーソル位置の単語を切り取りクリップボードへ追加する
+CutLine                                           #編集 - 行切り取り                                 ,行をカットしてクリップボードにコピーする
+CutFileLine                                       #編集 - ファイル行の切り取り                       ,ファイル行をカットしてクリップボードにコピーする
+CutViewLine                                       #編集 - 表示行の切り取り                           ,表示行をカットしてクリップボードにコピーする
+CutLineAppend                                     #編集 - 行を切り取って追加                         ,行を削除してクリップボードへ追加する
+CutFileLineAppend                                 #編集 - ファイル行を切り取って追加                 ,ファイル行を削除してクリップボードへ追加する
+CutViewLineAppend                                 #編集 - 表示行を切り取って追加                     ,表示行を削除してクリップボードへ追加する
+Copy, Ctrl+C, Ctrl+Insert                         #編集 - コピー                                     ,選択範囲をコピーしてクリップボードに保存する
+CopyAppend, Ctrl+Shift+C                          #編集 - コピーして追加                             ,選択範囲をコピーしてクリップボードへ追加する
+CopyWord                                          #編集 - 単語コピー                                 ,カーソル位置の単語をクリップボードへコピーする
+CopyWordAppend                                    #編集 - 単語をコピーして追加                       ,カーソル位置の単語をクリップボードへ追加コピーする
+CopyLine                                          #編集 - 行コピー                                   ,行を選択してクリップボードへコピーする
+CopyFileLine                                      #編集 - ファイル行コピー                           ,ファイル行を選択してクリップボードへコピーする
+CopyViewLine                                      #編集 - 表示行コピー                               ,表示行を選択してクリップボードへコピーする
+CopyLineAppend                                    #編集 - 行をコピーして追加                         ,行を選択してクリップボードへ追加コピーする
+CopyFileLineAppend                                #編集 - ファイル行をコピーして追加                 ,ファイル行を選択してクリップボードへ追加コピーする
+CopyViewLineAppend                                #編集 - 表示行をコピーして追加                     ,表示行を選択してクリップボードへ追加コピーする
+Paste, Ctrl+V, Shift+Insert                       #編集 - 貼り付け                                   ,クリップボードの内容を貼り付ける
+LinePaste, Ctrl+Shift+V                           #編集 - 行貼り付け                                 ,クリップボードの内容を新しい行として貼り付ける
+TransposeChar, Ctrl+Alt+T                         #編集 - 前後の文字を交換                           ,カーソル前後の文字を入れ替える
+TransposeWord                                     #編集 - 前後の単語を交換                           ,カーソル前後の単語を入れ替える
+TransposeLine, Alt+Shift+T                        #編集 - 前後の行を交換                             ,カーソル前後の行を入れ替える
+IndentSelection                                   #編集 - インデントを深く                           ,選択範囲を字下げする
+UnindentSelection                                 #編集 - インデントを浅く                           ,選択範囲の字下げを解除する
+AlignTextLeft                                     #編集 - 左揃え                                     ,選択範囲のテキストを左に揃える
+AlignTextRight, Shift+F9                          #編集 - 右揃え                                     ,選択範囲のテキストを右に揃える
+AlignTextCenter, Ctrl+F9                          #編集 - 中央揃え                                   ,選択範囲のテキストを中央に配置する
+SmartIndentSelection                              #編集 - 選択範囲をインデント                       ,選択範囲のインデントを整える
+SmartIndentFile                                   #編集 - ファイル全体をインデント                   ,ファイル全体のインデントを整える
+ToggleInsertMode, Insert                          #編集 - 挿入モード切り替え                         ,挿入モードと上書きモードを切り替える
+ToggleReadOnly                                    #編集 - 編集禁止モード切り替え                     ,編集禁止モードを切り替える
+EditProperties, Alt+Enter                         #編集 - プロパティ                                 ,プロパティ編集のダイアログボックスを開く
+CharSelectMode, F8                                #選択 - 文字選択モード                             ,文字選択モードへ切り替える
+BlockSelectMode, Ctrl+Shift+F8                    #選択 - 矩形選択モード                             ,矩形選択モードへ切り替える
+SelectWord, Shift+F8                              #選択 - カーソル位置の単語を選択                   ,カーソル位置の単語を選択する
+SelectLine, Ctrl+F8                               #選択 - カーソル位置の行全体を選択                 ,現在の行全体を選択する
+SelectFileLine                                    #選択 - カーソル位置のファイル行全体を選択         ,カーソルのあるファイル行を選択する
+SelectViewLine                                    #選択 - カーソル位置の表示行全体を選択             ,カーソルのある表示行を選択する
+SelectInsideBraces                                #選択 - 括弧内部の選択                             ,括弧の内部を選択する
+SelectInsideAndBraces                             #選択 - 括弧と内部の選択                           ,括弧と括弧の内部を選択する
+SelectComment, Alt+F8                             #選択 - コメント全体を選択                         ,カーソル位置のコメント全体を選択する
+SelectInsideComment, Ctrl+Alt+F8                  #選択 - コメント内部を選択                         ,カーソル位置のコメントの内部を選択する
+SelectAll, Ctrl+A                                 #選択 - すべてを選択                               ,ファイル全体を選択する
+CancelSelection                                   #選択 - 解除                                       ,選択範囲を解除する
+OutputSelection                                   #選択 - 選択範囲の出力                             ,選択範囲をアウトプットウインドウへ出力する
+InsertControlCode, Ctrl+Q                         #挿入 - 制御コード挿入                             ,制御コードを入力する
+InsertNewlines                                    #挿入 - 折り返し位置に改行を挿入                   ,選択範囲の折り返し位置に改行を挿入する
+InsertRGBValue                                    #挿入 - RGBカラー値                                ,RGBカラー値を挿入する
+InsertDate, Ctrl+D                                #挿入 - 今日の日付                                 ,今日の日付を挿入する
+InsertTime                                        #挿入 - 現在時刻                                   ,現在時刻を挿入する
+InsertDateTime                                    #挿入 - 現在の日時                                 ,現在の日時を挿入する
+FillToNextGuideline                               #挿入 - 次のガイドライン位置まで空白を挿入         ,次のガイドライン桁まで空白を挿入する
+OpenLineAbove, Ctrl+Shift+N                       #挿入 - 上に空白行挿入                             ,現在の行のすぐ上に空白行を挿入する
+OpenLineBelow                                     #挿入 - 下に空白行挿入                             ,現在の行のすぐ下へ空白行を挿入する
+DuplicateLine                                     #挿入 - カーソル行を複製して下に挿入               ,カーソル行の複製を作りすぐ下へ挿入する
+InsertLineComment, F10                            #挿入 - 行コメント(1)                              ,選択範囲のテキストを行コメント(1)化する
+InsertLineComment2                                #挿入 - 行コメント(2)                              ,選択範囲のテキストを行コメント(2)化する
+InsertBlockComment, Ctrl+F10                      #挿入 - ブロックコメント                           ,選択範囲のテキストをブロックコメント化する
+CommentWord, Alt+F10                              #挿入 - 単語をコメント化                           ,カーソル位置の単語をコメント化する
+CommentLine, Ctrl+Alt+F10                         #挿入 - 行をコメント化                             ,カーソル位置の行をコメント化する
+InsertMailQuote, Alt+[190]                        #挿入 - メール引用記号を挿入                       ,メール引用記号を挿入する
+RemoveMailQuote, Alt+[188]                        #削除 - メール引用記号を削除                       ,メール引用記号を削除する
+Backspace, Shift+Backspace                        #削除 - バックスペース                             ,カーソルの直前の1文字を削除する
+Delete                                            #削除 - 1文字削除                                  ,選択範囲を削除する
+DeleteAll                                         #削除 - すべて削除                                 ,すべて削除する
+DeleteWord, Ctrl+Shift+Delete                     #削除 - 単語削除                                   ,単語を削除する
+DeleteWordToEnd, Ctrl+Delete                      #削除 - 右へ単語削除                               ,右に向かって1単語削除する
+DeleteWordToBegin, Ctrl+Backspace                 #削除 - 左へ単語削除                               ,左に向かって1単語削除する
+DeleteToEnd, Ctrl+K                               #削除 - 行末まで削除                               ,カーソル位置から行末までを削除する
+DeleteToFileLineEnd                               #削除 - ファイル行末まで削除                       ,カーソル位置からファイル行の行末までを削除する
+DeleteToViewLineEnd                               #削除 - 表示行末まで削除                           ,カーソル位置から表示行の行末までを削除する
+DeleteToHome                                      #削除 - 行頭まで削除                               ,カーソル位置から行の先頭までを削除する
+DeleteToFileLineHome                              #削除 - ファイル行頭まで削除                       ,カーソル位置からファイル行の先頭までを削除する
+DeleteToViewLineHome                              #削除 - 表示行頭まで削除                           ,カーソル位置から表示行の先頭までを削除する
+DeleteNewlines                                    #削除 - 改行削除                                   ,改行を削除して行を連結する
+DeleteSpaces                                      #削除 - 複数の空白を1つにまとめる                  ,複数の空白を削除して1つにまとめる
+DeleteLine                                        #削除 - 現在行を削除                               ,カーソルのある行を削除する
+DeleteFileLine                                    #削除 - 現在のファイル行を削除                     ,カーソルのあるファイル行を削除する
+DeleteViewLine                                    #削除 - 現在の表示行を削除                         ,カーソルのある表示行を削除する
+DeleteBlankLines                                  #削除 - 連続した空白行削除                         ,連続した空白行を削除する
+DeleteTailingSpaces                               #削除 - 行末の空白を削除                           ,行末の不要な空白を削除する
+DeleteComment, Ctrl+Shift+F10                     #削除 - コメント削除                               ,選択範囲のコメント部分を削除する
+EmptyComment                                      #削除 - コメント内部を削除                         ,カーソル位置のコメントの内容を削除する
+Uncomment, Shift+F10                              #削除 - コメント解除                               ,選択範囲のコメント部分を非コメント化する
+UpperCaseSelection                                #変換 - 選択範囲を大文字に変換                     ,選択範囲の英小文字を大文字に変換する
+LowerCaseSelection                                #変換 - 選択範囲を小文字に変換                     ,選択範囲の英大文字を小文字に変換する
+FlipCaseSelection                                 #変換 - 選択範囲の大文字小文字を反転               ,選択範囲の英小文字を大文字に小文字を大文字に変換する
+CapitalizeSelection                               #変換 - 選択範囲の頭文字を大文字に変換             ,選択範囲の英単語の頭文字を大文字に、残りを小文字に変換する
+UpperCaseWord                                     #変換 - 単語を大文字に変換                         ,単語を大文字に変換する
+LowerCaseWord                                     #変換 - 単語を小文字に変換                         ,単語を小文字に変換する
+FlipCaseWord                                      #変換 - 単語の大文字小文字を反転                   ,単語を大文字を小文字に小文字を大文字に変換する
+CapitalizeWord                                    #変換 - 単語の頭文字だけ大文字に変換               ,単語の頭文字を大文字に変換する
+KatakanaSelection                                 #変換 - 全角ひらかなを全角カタカナへ変換           ,選択範囲の全角ひらかなを全角カタカナへ変換する
+HirakanaSelection                                 #変換 - 全角カタカナを全角ひらかなへ変換           ,選択範囲の全角カタカナを全角ひらかなへ変換する
+ZenkakuSelection, Alt+Shift+K                     #変換 - 文字種を指定して半角を全角に変換           ,文字種を指定して選択範囲の半角文字を全角文字に変換する
+ZenkakuAll                                        #変換 - 半角文字を全角文字に変換                   ,選択範囲の半角文字を全角文字に変換する
+ZenkakuAlphabet                                   #変換 - 半角アルファベットを全角に変換             ,選択範囲の半角アルファベットを全角に変換する
+ZenkakuNumber                                     #変換 - 半角数字を全角に変換                       ,選択範囲の半角数字を全角に変換する
+ZenkakuAlphabetNumber                             #変換 - 半角英数字を全角に変換                     ,選択範囲の半角英数字を全角に変換する
+ZenkakuPrintable                                  #変換 - スペース以外を全角に変換                   ,選択範囲のスペース以外の半角文字を全角に変換する
+ZenkakuSpace                                      #変換 - 半角スペースを全角に変換                   ,選択範囲の半角スペースを全角に変換する
+HankakuSelection, Ctrl+Shift+K                    #変換 - 文字種を指定して全角文字を半角に変換       ,文字種を指定して選択範囲の全角文字を半角に変換する
+HankakuAll                                        #変換 - 全角文字を半角文字に変換                   ,選択範囲の全角文字を半角文字に変換する
+HankakuAlphabet                                   #変換 - 全角アルファベットを半角に変換             ,選択範囲の全角アルファベットを半角に変換する
+HankakuNumber                                     #変換 - 全角数字を半角に変換                       ,選択範囲の全角数字を半角に変換する
+HankakuAlphabetNumber                             #変換 - 全角英数字を半角に変換                     ,選択範囲の全角英数字を半角に変換する
+HankakuPrintable                                  #変換 - スペース以外の全角文字を半角に変換         ,選択範囲のスペース以外の全角文字を半角に変換する
+HankakuSpace                                      #変換 - 全角スペースを半角に変換                   ,選択範囲の全角スペースを半角に変換する
+TabifySelection                                   #変換 - 行頭スペースをタブに変換                   ,選択範囲の行頭スペースをタブに変換する
+UntabifySelection, Ctrl+Shift+Space               #変換 - 行頭タブをスペースに変換                   ,選択範囲の行頭タブをスペースに変換する
+TabifyAllSelection                                #変換 - スペースをタブに変換                       ,選択範囲のスペースをタブに変換する
+UntabifyAllSelection                              #変換 - タブをスペースに変換                       ,選択範囲のタブをスペースに変換する
+ReplaceNewlineWithSpace                           #変換 - 改行をスペースに変換                       ,改行をスペースに変換して行を連結する
+SortLines                                         #変換 - 選択範囲の行を昇順にソート                 ,選択範囲の行を昇順にソートする
+ReverseSortLines                                  #変換 - 選択範囲の行を降順にソート                 ,選択範囲の行を降順にソートする
+ToggleSortIgnoreWhites                            #変換 - 行順ソートで行頭の空白文字を無視           ,行順ソートで行頭の半角空白文字を無視かどうかを切り替える
+ReverseLines                                      #変換 - 選択範囲の行順序を反転                     ,選択範囲の行を逆順にする
+ChangeEncoding                                    #変換 - 選択範囲を自動判定してShift JIS変換        ,選択範囲の文字コードを自動判断してShift JISに変換する
+ChangeEncodingFromEUC                             #変換 - 選択範囲をEUCからShift JISに変換           ,選択範囲の文字をEUCと仮定してShift JISに変換する
+ChangeEncodingFromJIS                             #変換 - 選択範囲をJISからShift JISに変換           ,選択範囲の文字をJISと仮定してShift JISに変換する
+ChangeEncodingFromUTF7                            #変換 - 選択範囲をUTF-7からShift JISに変換         ,選択範囲の文字をUTF-7と仮定してShift JISに変換する
+ChangeEncodingFromUTF8                            #変換 - 選択範囲をUTF-8からShift JISに変換         ,選択範囲の文字をUTF-8と仮定してShift JISに変換する
+ChangeEncodingFromUnicode                         #変換 - 選択範囲をUnicode Little EndianからShift JISに変換 ,選択範囲の文字をUnicode Little Endianと仮定してShift JISに変換する
+ChangeEncodingFromReversedUnicode                 #変換 - 選択範囲をUnicode Big EndianからShift JISに変換 ,選択範囲の文字をUnicode Big Endianと仮定してShift JISに変換する
+ChangeEncodingToShiftJIS, Ctrl+Shift+S            #変換 - ファイルの漢字コードをShift JISに設定      ,作業中ファイル全体の漢字コードをShift JISに設定する
+ChangeEncodingToEUC, Ctrl+E                       #変換 - ファイルの漢字コードをEUCに設定            ,作業中ファイル全体の漢字コードをEUCに設定する
+ChangeEncodingToJIS                               #変換 - ファイルの漢字コードをJISに設定            ,作業中ファイル全体の漢字コードをJISに設定する
+ChangeEncodingToUTF7                              #変換 - ファイルの漢字コードをUTF-7に設定          ,作業中ファイル全体の漢字コードをUTF-7に設定する
+ChangeEncodingToUTF8                              #変換 - ファイルの漢字コードをUTF-8に設定          ,作業中ファイル全体の漢字コードをUTF-8に設定する
+ChangeEncodingToUTF8N, Alt+U                      #変換 - ファイルの漢字コードをUTF-8Nに設定         ,作業中ファイル全体の漢字コードをUTF-8Nに設定する
+ChangeEncodingToUnicode                           #変換 - ファイルの漢字コードをUnicode LEに設定     ,作業中ファイル全体の漢字コードをUnicode (Little Endian)に設定する
+ChangeEncodingToUnicodeBigEndian                  #変換 - ファイルの漢字コードをUnicode BEに設定     ,作業中ファイル全体の漢字コードをUnicode (Big Endian)に設定する
+ChangeLineTermCRLF, Ctrl+Shift+L                  #変換 - ファイルの改行コードをCR-LFに変更          ,作業中ファイル全体の改行コードをCR-LFに変更する
+ChangeLineTermLF, Ctrl+L                          #変換 - ファイルの改行コードをLFに変更             ,作業中ファイル全体の改行コードをLFに変更する
+ChangeLineTermCR                                  #変換 - ファイルの改行コードをCRに変更             ,作業中ファイル全体の改行コードをCRに変更する
+ComplementWord, Ctrl+Space                        #補完入力 - 前後の単語で補完                       ,カーソル位置の単語をその前後の単語で補完する
+ComplementWordBackward                            #補完入力 - 前の行から単語を探して補完             ,カーソル位置の単語をその行以前の単語で補完する
+ComplementWordForward                             #補完入力 - 後ろの行から単語を探して補完           ,カーソル位置の単語をその行以降の単語で補完する
+ComplementKeyword, Ctrl+[191]                     #補完入力 - キーワード補完入力                     ,キーワードを補完して入力する
+InputAbbreviation                                 #補完入力 - 短縮入力                               ,短縮入力を変換する
+GoToLine, Ctrl+G                                  #ジャンプ - 指定行                                 ,指定行へジャンプする
+GoToLastModified                                  #ジャンプ - 最終変更個所                           ,最後に編集した個所へジャンプする
+GoToMatchBrace, Ctrl+[221]                        #ジャンプ - 対応括弧                               ,対応する括弧へジャンプする
+GoToMatchBraceExtend, Ctrl+Shift+[221]            #ジャンプ - 選択範囲を拡大して対応括弧             ,選択範囲を対応括弧へ拡大する
+GoToLiteraryMatchBrace                            #ジャンプ - 見かけの対応括弧                       ,見かけ上対応する括弧へジャンプする
+GoToLiteraryMatchBraceExtend                      #ジャンプ - 選択範囲を拡大して見かけの対応括弧     ,選択範囲を見かけ上対応する括弧へ拡大する
+GoToNextTag, F4                                   #ジャンプ - 次のタグ                               ,次のエラー個所へタグジャンプする
+GoToPreviousTag, Shift+F4                         #ジャンプ - 前のタグ                               ,前のエラー個所へタグジャンプする
+GoToTag, Ctrl+T                                   #ジャンプ - カーソル行のタグ                       ,カーソル行のエラータグでジャンプする
+GoToNextLabel, Ctrl+[190]                         #ジャンプ - 次のラベル/ブロック                    ,次のラベル/ブロックへジャンプする
+GoToPreviousLabel, Ctrl+[188]                     #ジャンプ - 前のラベル/ブロック                    ,前のラベル/ブロックへジャンプする
+GoToNextConditional, Alt+[221]                    #ジャンプ - 次の対応する条件コンパイル文           ,次の対応する条件コンパイル文へジャンプする
+GoToPreviousConditional, Alt+[219]                #ジャンプ - 前の対応する条件コンパイル文           ,前の対応する条件コンパイル文へジャンプする
+GoToNextTouched, Ctrl+Shift+9                     #ジャンプ - 次の変更行                             ,次の変更行へジャンプする
+GoToPreviousTouched, Ctrl+Shift+8                 #ジャンプ - 前の変更行                             ,前の変更行へジャンプする
+ClearAllTouched, Ctrl+Shift+0                     #ジャンプ - 変更行情報クリア                       ,変更行の情報をクリアする
+CharLeft                                          #カーソル移動 - 1文字左へ                          ,カーソルを1文字左へ移動する
+CharLeftExtend                                    #カーソル移動 - 選択範囲を1文字左へ                ,選択範囲を1文字左へ拡大する
+CharRight                                         #カーソル移動 - 1文字右へ                          ,カーソルを1文字右へ移動する
+CharRightExtend                                   #カーソル移動 - 選択範囲を1文字右へ                ,選択範囲を1文字右へ拡大する
+WordLeft                                          #カーソル移動 - 1単語左へ                          ,カーソルを1単語左へ移動する
+WordLeftExtend                                    #カーソル移動 - 選択範囲を1単語左へ                ,選択範囲を1単語左へ拡大する
+WordBoundaryLeft                                  #カーソル移動 - 左の単語境界へ                     ,カーソルを左の単語境界へ移動する
+WordBoundaryLeftExtend                            #カーソル移動 - 左の単語境界へ選択範囲を拡大       ,選択範囲を左の単語境界へ拡大する
+WordRight                                         #カーソル移動 - 1単語右へ                          ,カーソルを1単語右へ移動する
+WordRightExtend                                   #カーソル移動 - 選択範囲を1単語右へ                ,選択範囲を1単語右へ拡大する
+WordBoundaryRight                                 #カーソル移動 - 右の単語境界へ                     ,カーソルを右の単語境界へ移動する
+WordBoundaryRightExtend                           #カーソル移動 - 右の単語境界へ選択範囲を拡大       ,選択範囲を右の単語境界へ拡大する
+Home                                              #カーソル移動 - 行の先頭へ                         ,カーソルを行の頭へ移動する
+HomeExtend                                        #カーソル移動 - 選択範囲を行の先頭へ               ,選択範囲を行の先頭まで拡大する
+FileLineHome                                      #カーソル移動 - ファイル行の先頭へ                 ,カーソルをファイル行の頭へ移動する
+FileLineHomeExtend                                #カーソル移動 - 選択範囲をファイル行の先頭へ       ,選択範囲をファイル行の先頭まで拡大する
+ViewLineHome                                      #カーソル移動 - 表示行の先頭へ                     ,カーソルを表示行の頭へ移動する
+ViewLineHomeExtend                                #カーソル移動 - 選択範囲を表示行の先頭へ           ,選択範囲を表示行の先頭まで拡大する
+End                                               #カーソル移動 - 行の最後へ                         ,カーソルを行の最後へ移動する
+EndExtend                                         #カーソル移動 - 選択範囲を行の最後へ               ,選択範囲を行の最後まで拡大する
+FileLineEnd                                       #カーソル移動 - ファイル行の最後へ                 ,カーソルをファイル行の最後へ移動する
+FileLineEndExtend                                 #カーソル移動 - 選択範囲をファイル行の最後へ       ,選択範囲をファイル行の最後まで拡大する
+ViewLineEnd                                       #カーソル移動 - 表示行の最後へ                     ,カーソルを表示行の最後へ移動する
+ViewLineEndExtend                                 #カーソル移動 - 選択範囲を表示行の最後へ           ,選択範囲を表示行の最後まで拡大する
+LineUp                                            #カーソル移動 - 1行上へ                            ,カーソルを1行上へ移動する
+LineUpExtend                                      #カーソル移動 - 選択範囲を1行上へ                  ,選択範囲を1行上へ拡大する
+LineDown                                          #カーソル移動 - 1行下へ                            ,カーソルを1行下へ移動する
+LineDownExtend                                    #カーソル移動 - 選択範囲を1行下へ                  ,選択範囲を1行下へ拡大する
+HalfPageUp                                        #カーソル移動 - 半ページ上へ                       ,カーソルを半ページ上へ移動する
+HalfPageUpExtend                                  #カーソル移動 - 選択範囲を半ページ上へ             ,選択範囲を半ページ上へ拡大する
+HalfPageDown                                      #カーソル移動 - 半ページ下へ                       ,カーソルを半ページ下へ移動する
+HalfPageDownExtend                                #カーソル移動 - 選択範囲を半ページ下へ             ,選択範囲を半ページ下へ拡大する
+PageUp                                            #カーソル移動 - 1ページ上へ                        ,カーソルを1ページ上へ移動する
+PageUpExtend                                      #カーソル移動 - 選択範囲を1ページ上へ              ,選択範囲を1ページ上へ拡大する
+PageUpTwoWindows, Ctrl+Alt+PageUp                 #カーソル移動 - 同時に1ページ上へ                  ,2つのウインドウを同時に1ページ上へ移動する
+PageDown                                          #カーソル移動 - 1ページ下へ                        ,カーソルを1ページ下へ移動する
+PageDownExtend                                    #カーソル移動 - 選択範囲を1ページ下へ              ,選択範囲を1ページ下へ拡大する
+PageDownTwoWindows, Ctrl+Alt+PageDown             #カーソル移動 - 同時に1ページ下へ                  ,2つのウインドウを同時に1ページ下へ移動する
+DocumentStart                                     #カーソル移動 - テキストの先頭へ                   ,テキストの先頭へカーソルを移動させる
+DocumentStartExtend                               #カーソル移動 - 選択範囲をテキストの先頭へ         ,テキストの先頭まで選択範囲を拡大する
+DocumentEnd                                       #カーソル移動 - テキストの最後へ                   ,テキストの最後へカーソルを移動させる
+DocumentEndExtend                                 #カーソル移動 - 選択範囲をテキストの最後へ         ,テキストの最後まで選択範囲を拡大する
+WindowTopLine                                     #カーソル移動 - ウインドウの最上行へ               ,カーソルをウインドウの最上行へ移動する
+WindowBottomLine                                  #カーソル移動 - ウインドウの最下行へ               ,カーソルをウインドウの最下行へ移動する
+WindowCenterLine                                  #カーソル移動 - ウインドウの中央へ                 ,カーソルをウインドウの中央の行へ移動する
+SwapAnchorCurrent, Ctrl+Shift+A                   #カーソル移動 - アンカー/カレント入れ替え          ,アンカーポイントとカレントポイントを入れ替える
+ScrollWindowLeft                                  #スクロール - 左スクロール                         ,左へスクロールする
+ScrollWindowRight                                 #スクロール - 右スクロール                         ,右へスクロールする
+ScrollWindowUp                                    #スクロール - スクロールアップ                     ,スクロールアップする
+ScrollWindowDown                                  #スクロール - スクロールダウン                     ,スクロールダウンする
+QuickScrollUp                                     #スクロール - 高速スクロールアップ                 ,高速にスクロールアップする
+QuickScrollDown                                   #スクロール - 高速スクロールダウン                 ,高速にスクロールダウンする
+ScrollTwoWindowsLeft, Ctrl+Alt+Left               #スクロール - 同時に左スクロール                   ,2つのウインドウを同時に左へスクロールする
+ScrollTwoWindowsRight, Ctrl+Alt+Right             #スクロール - 同時に右スクロール                   ,2つのウインドウを同時に右へスクロールする
+ScrollTwoWindowsUp, Ctrl+Alt+Down                 #スクロール - 同時にスクロールアップ               ,2つのウインドウを同時にスクロールアップする
+ScrollTwoWindowsDown, Ctrl+Alt+Up                 #スクロール - 同時にスクロールダウン               ,2つのウインドウを同時にスクロールダウンする
+DrawLineLeft, Alt+Left                            #罫線 - 罫線を左へ                                 ,左に向かって罫線を引く
+DrawLineRight, Alt+Right                          #罫線 - 罫線を右へ                                 ,右に向かって罫線を引く
+DrawLineUp, Alt+Up                                #罫線 - 罫線を上へ                                 ,上に向かって罫線を引く
+DrawLineDown, Alt+Down                            #罫線 - 罫線を下へ                                 ,下に向かって罫線を引く
+EraseLineLeft, Alt+Shift+Left                     #罫線 - 罫線を左へ向かって消す                     ,左に向かって罫線を消去する
+EraseLineRight, Alt+Shift+Right                   #罫線 - 罫線を右へ向かって消す                     ,右に向かって罫線を消去する
+EraseLineUp, Alt+Shift+Up                         #罫線 - 罫線を上へ向かって消す                     ,上に向かって罫線を消去する
+EraseLineDown, Alt+Shift+Down                     #罫線 - 罫線を下へ向かって消す                     ,下に向かって罫線を消去する
+ChangeLineType, Alt+Home                          #罫線 - 罫線の種類を変更する                       ,罫線の種類を変更する
+CharLineType                                      #罫線 - 文字(+-|)で罫線を描く                      ,文字(+-|)で罫線を描く
+ThinLineType                                      #罫線 - 細い全角罫線文字で描く                     ,細い全角罫線文字で描く
+ThickLineType                                     #罫線 - 太い全角罫線文字で描く                     ,太い全角罫線文字で描く
+RescueNecLine                                     #罫線 - NECの旧罫線文字を変換                      ,NECの旧罫線文字を変換する
+HtmlBreakLine                                     #HTML - <BR>と改行を挿入                           ,HTMLの改行とテキストの改行コードを挿入する
+HtmlNextTag, Ctrl+Shift+[190]                     #HTML - 次のタグ                                   ,次のHTMLタグへカーソルを移動する
+HtmlPreviousTag, Ctrl+Shift+[188]                 #HTML - 前のタグ                                   ,前のHTMLタグへカーソルを移動する
+HtmlGoToMatching, Ctrl+Shift+[191]                #HTML - 対応するタグへジャンプ                     ,対応するHTMLタグへジャンプする
+HtmlSelectTag                                     #HTML - タグ選択                                   ,HTMLのタグを選択する
+HtmlSelectText                                    #HTML - タグ間のテキストを選択                     ,HTMLタグ間のテキストを選択する
+HtmlSelectInsideTagPair                           #HTML - 一対のタグの内側を選択                     ,一対のHTMLタグの内側を選択する
+HtmlSelectOutsideTagPair, Ctrl+F7                 #HTML - 一対のタグの外側を選択                     ,一対のHTMLタグの外側を選択する
+HtmlDeleteTag, Shift+F7                           #HTML - タグ削除                                   ,HTMLのタグを削除する
+HtmlDeleteTagPair, Ctrl+Shift+F7                  #HTML - 一対のタグを削除                           ,HTMLのタグと対応するタグを削除する
+HtmlUpperCaseElement                              #HTML - エレメント/属性名を大文字化                ,HTMLエレメント名を大文字化する
+HtmlLowerCaseElement                              #HTML - エレメント/属性名を小文字化                ,HTMLエレメント名を小文字化する
+HtmlConvertToEntity, Alt+F7                       #HTML - エンティティへ変換                         ,文字をHTMLのエンティティに変換する
+HtmlConvertFromEntity, Alt+Shift+F7               #HTML - エンティティから変換                       ,HTMLエンティティを文字に変換する
+ConvertHtmlToText                                 #HTML - HTMLからテキストへ変換                     ,HTMLをテキストに変換する
+ToggleRecordingKeyboardMacro, Ctrl+Shift+R        #キーボードマクロ - 記録開始                       ,キーボードマクロの記録を開始/終了する
+PauseRecordingKeyboardMacro                       #キーボードマクロ - 記録一時停止                   ,キーボードマクロの記録を一時停止/再開する
+StopRecordingKeyboardMacro                        #キーボードマクロ - 記録終了                       ,キーボードマクロの記録を終了する
+PlayKeyboardMacro, Ctrl+Shift+P                   #キーボードマクロ - 再生                           ,キーボードマクロを再生する
+SaveKeyboardMacro                                 #キーボードマクロ - プロジェクトへ保存             ,キーボードマクロをプロジェクトに保存する
+ToggleBookmark, Ctrl+F2                           #ブックマーク - 設定/解除                          ,ブックマークを付けたり消したりする
+ToggleBookmark1                                   #ブックマーク - ブックマーク1を設定/解除           ,ブックマーク1を付けたり消したりする
+ToggleBookmark2                                   #ブックマーク - ブックマーク2を設定/解除           ,ブックマーク2を付けたり消したりする
+ToggleBookmark3                                   #ブックマーク - ブックマーク3を設定/解除           ,ブックマーク3を付けたり消したりする
+GoToNextBookmark, F2                              #ブックマーク - 次へジャンプ                       ,次のブックマークを探す
+GoToPreviousBookmark                              #ブックマーク - 前へジャンプ                       ,前のブックマークを探す
+BookmarkList, Alt+F2                              #ブックマーク - 一覧表示                           ,ブックマークの一覧を表示する
+ClearAllBookmarks, Ctrl+Shift+F2                  #ブックマーク - すべてクリア                       ,すべてのブックマークを削除する
+Find, Alt+F3                                      #検索 - 検索                                       ,指定した条件で検索する
+FindTool, Ctrl+F                                  #検索 - 検索ツール                                 ,検索ツールを選択する
+FindNext, F3                                      #検索 - 次を検索                                   ,同じ条件で次の文字列を検索する
+FindPrevious, Shift+F3                            #検索 - 前を検索                                   ,同じ条件で前の文字列を検索する
+FindNextOtherPane                                 #検索 - 別ペインで次を検索                         ,ウインドウを分割し同じ条件で次の文字列を検索する
+FindPreviousOtherPane                             #検索 - 別ペインで前を検索                         ,ウインドウを分割し同じ条件で前の文字列を検索する
+FindNextWord, Ctrl+F3                             #検索 - 次の単語を検索                             ,次のカーソル位置の単語を検索する
+FindPreviousWord, Ctrl+Shift+F3                   #検索 - 前の単語を検索                             ,前のカーソル位置の単語を検索する
+FindNextWordOtherPane, Ctrl+F5                    #検索 - 別ペインで次の単語を検索                   ,ウインドウを分割し次のカーソル位置の単語を検索する
+FindPreviousWordOtherPane, Ctrl+Shift+F5          #検索 - 別ペインで前の単語を検索                   ,ウインドウを分割し前のカーソル位置の単語を検索する
+ToggleSearchHighlight, Ctrl+Alt+F3                #検索 - 検索強調表示                               ,検索にヒット文字列の強調表示/非表示を切り替える
+ClearSearchHighlight                              #検索 - 検索強調クリア                             ,作業中ファイルの検索にヒットした強調表示をクリアする
+ClearSearchHighlightAll, Alt+Shift+F3             #検索 - 検索強調全クリア                           ,検索にヒットした強調表示をすべてクリアする
+GrepFiles, Ctrl+Shift+G                           #検索 - ファイルから検索                           ,ファイルの中から文字列を検索する
+DiffFiles, Ctrl+Shift+D                           #検索 - ファイル比較                               ,2つのファイル/フォルダを比較する
+QuickDiffFiles, Ctrl+Shift+Q                      #検索 - クイックファイル比較                       ,開いている2つのファイルを比較する
+ApplyLeftToRight                                  #検索 - 比較結果を左から右へコピー                 ,比較しているファイル間の相違箇所を左(上)から右(下)のファイルにコピーする
+ApplyRightToLeft                                  #検索 - 比較結果を右から左へコピー                 ,比較しているファイル間の相違箇所を右(下)から左(上)のファイルにコピーする
+GrepThisFile                                      #検索 - このファイルから検索                       ,このファイルから文字列を検索する
+GrepThisFileAppend                                #検索 - このファイルから追加検索                   ,このファイルから文字列を追加検索する
+GrepGroup, F11                                    #検索 - カレントグループから検索                   ,カレントグループから文字列を検索する
+GrepGroupAppend, Shift+F11                        #検索 - カレントグループから追加検索               ,カレントグループから文字列を追加検索する
+GrepGroupDeeply, Ctrl+F11                         #検索 - カレントグループ以下から検索               ,カレントとその子孫グループから文字列を検索する
+GrepGroupDeeplyAppend, Ctrl+Shift+F11             #検索 - カレントグループ以下から追加検索           ,カレントとその子孫グループから文字列を追加検索する
+GrepProject, Alt+F11                              #検索 - プロジェクト全体から検索                   ,プロジェクト全体から文字列を検索する
+GrepProjectAppend, Alt+Shift+F11                  #検索 - プロジェクト全体から追加検索               ,プロジェクト全体から文字列を追加検索する
+FindDefinition, F12                               #検索 - シンボルの定義位置                         ,シンボルの定義位置へジャンプする
+FindFirstDefinition                               #検索 - 最初のシンボル定義位置                     ,最初のシンボル定義位置へジャンプする
+FindLastDefinition                                #検索 - 最後のシンボル定義位置                     ,最後のシンボル定義位置へジャンプする
+FindNextDefinition, Ctrl+F12                      #検索 - 次のシンボル定義位置                       ,次のシンボル定義位置へジャンプする
+FindPreviousDefinition, Ctrl+Shift+F12            #検索 - 前のシンボル定義位置                       ,前のシンボル定義位置へジャンプする
+BackwardDefinitionHistory, Ctrl+Shift+B           #検索 - 前の定義ジャンプ位置                       ,定義位置ジャンプヒストリ中の1つ前のジャンプ位置へ戻る
+ForwardDefinitionHistory, Ctrl+Shift+F            #検索 - 次の定義ジャンプ位置                       ,定義位置ジャンプヒストリ中の1つ次のジャンプ位置へ進める
+CreateTAGS, Shift+F12                             #検索 - TAGS作成                                   ,TAGSシンボル定義位置情報を作り直す
+BrowseDefinitions, Alt+F12                        #検索 - 定義位置ブラウザ                           ,TAGSシンボル定義位置をブラウズする
+Replace, Ctrl+R                                   #検索 - 置換                                       ,指定した文字列を他の文字列で置換する
+SaveFindCriteria                                  #検索 - 検索条件の保存                             ,文字列検索条件をプロジェクトへ保存する
+SaveGrepCriteria                                  #検索 - ファイルから検索条件の保存                 ,ファイルから検索の条件をプロジェクトへ保存する
+SaveDiffCriteria                                  #検索 - ファイル比較条件の保存                     ,ファイル比較の条件をプロジェクトへ保存する
+ToggleCaseSensitivity                             #検索 - 大文字小文字区別を切り替え                 ,検索の大文字小文字区別を切り替える
+ToggleMatchWord, Ctrl+W                           #検索 - 単語単位検索の切り替え                     ,単語単位検索を切り替える
+ToggleRegularExpression, Ctrl+Shift+E             #検索 - 正規表現検索の切り替え                     ,正規表現検索を切り替える
+ToggleFuzzySearch                                 #検索 - あいまい検索                               ,あいまい検索を切り替える
+NewProject                                        #プロジェクト - 新規プロジェクト                   ,新しいプロジェクトファイルを作成する
+SaveProject                                       #プロジェクト - 保存                               ,プロジェクトを保存する
+CloseProject                                      #プロジェクト - 閉じる                             ,プロジェクトを閉じる
+NewGroup                                          #プロジェクト - 新規グループ                       ,新規グループを作成する
+InsertFile                                        #プロジェクト - ファイル挿入                       ,プロジェクト/グループにファイルを挿入する
+ToggleShowFullPath                                #プロジェクト - フルパス表示                       ,プロジェクトのフルパスを表示する
+IdentifyItem, Ctrl+Shift+I                        #プロジェクト - 位置の確認                         ,編集中のファイルに対応するプロジェクト中の位置を表示する
+SortProject                                       #プロジェクト - 浅くソート                         ,カレントグループを並び替える
+SortProjectDeeply                                 #プロジェクト - 深くソート                         ,カレントグループ以下を並び替える
+DeleteMissings                                    #プロジェクト - 存在しないファイルの削除           ,ディスク上に存在しないファイル登録を抹消する
+EmptyTrash                                        #プロジェクト - ごみ箱を空にする                   ,プロジェクトのごみ箱を空にする
+StopExecution, Shift+[27]                         #プロジェクト - 実行中止                           ,実行を中止する
+DebugRun, F5                                      #デバッグ - 実行                                   ,デバッグ中のプログラムを実行する
+DebugStop, Shift+F5                               #デバッグ - 中止                                   ,デバッグを中止する
+DebugStepInto                                     #デバッグ - ステップイン                           ,ステップイン実行する
+DebugStepOver                                     #デバッグ - ステップオーバー                       ,ステップオーバー実行する
+DebugStepOut                                      #デバッグ - ステップアウト                         ,ステップアウト実行する
+DebugRunToCursor                                  #デバッグ - カーソル位置まで実行                   ,カーソル位置までデバッグ中のプログラムを実行する
+DebugToggleBreakpoint, F9                         #デバッグ - ブレークポイント                       ,ブレークポイント設定・解除する
+DebugClearAllBreakpoints                          #デバッグ - 全ブレークポイントクリア               ,ブレークポイントをすべて解除する
+DebugToggleEnableBreakpoint                       #デバッグ - ブレークポイント無効・有効の切り替え   ,ブレークポイントの有効・無効を切り替える
+DebugDisableAllBreakpoints                        #デバッグ - 全ブレークポイントの無効               ,すべてのブレークポイントを無効化する
+DebugListBreakpoints, Alt+F9                      #デバッグ - ブレークポイントリスト                 ,ブレークポイントリストを表示する
+DebugVariableBar                                  #デバッグ - 変数ウインドウ                         ,変数ウインドウを表示・非表示にする
+DebugStackBar                                     #デバッグ - スタックウインドウ                     ,スタックウインドウを表示・非表示にする
+DebugToolbarLayout                                #デバッグ - ツールバーレイアウトの切り替え         ,デバッグ用ツールバーレイアウトに切り替える
+UserMenu1                                         #ツール - ユーザ定義メニュー1                      ,ユーザ定義メニュー1を表示する
+UserMenu2                                         #ツール - ユーザ定義メニュー2                      ,ユーザ定義メニュー2を表示する
+UserMenu3                                         #ツール - ユーザ定義メニュー3                      ,ユーザ定義メニュー3を表示する
+UserMenu4                                         #ツール - ユーザ定義メニュー4                      ,ユーザ定義メニュー4を表示する
+UserMenu5                                         #ツール - ユーザ定義メニュー5                      ,ユーザ定義メニュー5を表示する
+UserMenu6                                         #ツール - ユーザ定義メニュー6                      ,ユーザ定義メニュー6を表示する
+UserMenu7                                         #ツール - ユーザ定義メニュー7                      ,ユーザ定義メニュー7を表示する
+UserMenu8                                         #ツール - ユーザ定義メニュー8                      ,ユーザ定義メニュー8を表示する
+UserMenu9                                         #ツール - ユーザ定義メニュー9                      ,ユーザ定義メニュー9を表示する
+UserMenu10                                        #ツール - ユーザ定義メニュー10                     ,ユーザ定義メニュー10を表示する
+UserMenu11                                        #ツール - ユーザ定義メニュー11                     ,ユーザ定義メニュー11を表示する
+UserMenu12                                        #ツール - ユーザ定義メニュー12                     ,ユーザ定義メニュー12を表示する
+UserMenu13                                        #ツール - ユーザ定義メニュー13                     ,ユーザ定義メニュー13を表示する
+UserMenu14                                        #ツール - ユーザ定義メニュー14                     ,ユーザ定義メニュー14を表示する
+UserMenu15                                        #ツール - ユーザ定義メニュー15                     ,ユーザ定義メニュー15を表示する
+UserMenu16                                        #ツール - ユーザ定義メニュー16                     ,ユーザ定義メニュー16を表示する
+UserMenu17                                        #ツール - ユーザ定義メニュー17                     ,ユーザ定義メニュー17を表示する
+UserMenu18                                        #ツール - ユーザ定義メニュー18                     ,ユーザ定義メニュー18を表示する
+UserMenu19                                        #ツール - ユーザ定義メニュー19                     ,ユーザ定義メニュー19を表示する
+UserMenu20                                        #ツール - ユーザ定義メニュー20                     ,ユーザ定義メニュー20を表示する
+UserMenu21                                        #ツール - ユーザ定義メニュー21                     ,ユーザ定義メニュー21を表示する
+UserMenu22                                        #ツール - ユーザ定義メニュー22                     ,ユーザ定義メニュー22を表示する
+UserMenu23                                        #ツール - ユーザ定義メニュー23                     ,ユーザ定義メニュー23を表示する
+UserMenu24                                        #ツール - ユーザ定義メニュー24                     ,ユーザ定義メニュー24を表示する
+UserTool1, Ctrl+1                                 #ツール - ユーザ定義ツール1                        ,ユーザ定義ツール 1 を実行する
+UserTool2, Ctrl+2                                 #ツール - ユーザ定義ツール2                        ,ユーザ定義ツール 2 を実行する
+UserTool3, Ctrl+3                                 #ツール - ユーザ定義ツール3                        ,ユーザ定義ツール 3 を実行する
+UserTool4, Ctrl+4                                 #ツール - ユーザ定義ツール4                        ,ユーザ定義ツール 4 を実行する
+UserTool5, Ctrl+5                                 #ツール - ユーザ定義ツール5                        ,ユーザ定義ツール 5 を実行する
+UserTool6, Ctrl+6                                 #ツール - ユーザ定義ツール6                        ,ユーザ定義ツール 6 を実行する
+UserTool7, Ctrl+7                                 #ツール - ユーザ定義ツール7                        ,ユーザ定義ツール 7 を実行する
+UserTool8, Ctrl+8                                 #ツール - ユーザ定義ツール8                        ,ユーザ定義ツール 8 を実行する
+UserTool9, Ctrl+9                                 #ツール - ユーザ定義ツール9                        ,ユーザ定義ツール 9 を実行する
+UserTool10, Ctrl+0                                #ツール - ユーザ定義ツール10                       ,ユーザ定義ツール 10 を実行する
+UserTool11                                        #ツール - ユーザ定義ツール11                       ,ユーザ定義ツール 11 を実行する
+UserTool12                                        #ツール - ユーザ定義ツール12                       ,ユーザ定義ツール 12 を実行する
+UserTool13                                        #ツール - ユーザ定義ツール13                       ,ユーザ定義ツール 13 を実行する
+UserTool14                                        #ツール - ユーザ定義ツール14                       ,ユーザ定義ツール 14 を実行する
+UserTool15                                        #ツール - ユーザ定義ツール15                       ,ユーザ定義ツール 15 を実行する
+UserTool16                                        #ツール - ユーザ定義ツール16                       ,ユーザ定義ツール 16 を実行する
+UserTool17                                        #ツール - ユーザ定義ツール17                       ,ユーザ定義ツール 17 を実行する
+UserTool18                                        #ツール - ユーザ定義ツール18                       ,ユーザ定義ツール 18 を実行する
+UserTool19                                        #ツール - ユーザ定義ツール19                       ,ユーザ定義ツール 19 を実行する
+UserTool20                                        #ツール - ユーザ定義ツール20                       ,ユーザ定義ツール 20 を実行する
+UserTool21                                        #ツール - ユーザ定義ツール21                       ,ユーザ定義ツール 21 を実行する
+UserTool22                                        #ツール - ユーザ定義ツール22                       ,ユーザ定義ツール 22 を実行する
+UserTool23                                        #ツール - ユーザ定義ツール23                       ,ユーザ定義ツール 23 を実行する
+UserTool24                                        #ツール - ユーザ定義ツール24                       ,ユーザ定義ツール 24 を実行する
+OracleTool1                                       #ツール - DBツール1                                ,DBツール1を実行する
+OracleTool2                                       #ツール - DBツール2                                ,DBツール2を実行する
+OracleTool3                                       #ツール - DBツール3                                ,DBツール3を実行する
+OracleTool4                                       #ツール - DBツール4                                ,DBツール4を実行する
+OracleTool5                                       #ツール - DBツール5                                ,DBツール5を実行する
+OracleTool6                                       #ツール - DBツール6                                ,DBツール6を実行する
+OracleTool7                                       #ツール - DBツール7                                ,DBツール7を実行する
+OracleTool8                                       #ツール - DBツール8                                ,DBツール8を実行する
+OpenOracleToolDialog                              #ツール - DBツール設定                             ,DBツールのオプションを設定する
+Script1, Shift+F2                                 #スクリプト - スクリプト1 - PHPヘルプ              ,スクリプト 1 を実行する
+Script2, Alt+D                                    #スクリプト - スクリプト2 - 空行一括削除           ,スクリプト 2 を実行する
+Script3, Alt+L                                    #スクリプト - スクリプト3 - PHPショートタグ変換    ,スクリプト 3 を実行する
+Script4, Alt+Shift+D                              #スクリプト - スクリプト4 - DOMさんHTML変換        ,スクリプト 4 を実行する
+Script5, Ctrl+Shift+T                             #スクリプト - スクリプト5 - スペース行変換         ,スクリプト 5 を実行する
+Script6, Alt+S                                    #スクリプト - スクリプト6 - 行末スペース削除       ,スクリプト 6 を実行する
+Script7, Ctrl+H                                   #スクリプト - スクリプト7 - PHPタグ(htmlspecialchars) ,スクリプト 7 を実行する
+Script8, Ctrl+I                                   #スクリプト - スクリプト8 - PHPタグ(number_format) ,スクリプト 8 を実行する
+Script9, Alt+T                                    #スクリプト - スクリプト9 - タブを4スペースに      ,スクリプト 9 を実行する
+Script10                                          #スクリプト - スクリプト10                         ,スクリプト 10 を実行する
+Script11                                          #スクリプト - スクリプト11                         ,スクリプト 11 を実行する
+Script12                                          #スクリプト - スクリプト12                         ,スクリプト 12 を実行する
+Script13                                          #スクリプト - スクリプト13                         ,スクリプト 13 を実行する
+Script14                                          #スクリプト - スクリプト14                         ,スクリプト 14 を実行する
+Script15                                          #スクリプト - スクリプト15                         ,スクリプト 15 を実行する
+Script16                                          #スクリプト - スクリプト16                         ,スクリプト 16 を実行する
+Script17                                          #スクリプト - スクリプト17                         ,スクリプト 17 を実行する
+Script18                                          #スクリプト - スクリプト18                         ,スクリプト 18 を実行する
+Script19                                          #スクリプト - スクリプト19                         ,スクリプト 19 を実行する
+Script20                                          #スクリプト - スクリプト20                         ,スクリプト 20 を実行する
+Script21                                          #スクリプト - スクリプト21                         ,スクリプト 21 を実行する
+Script22                                          #スクリプト - スクリプト22                         ,スクリプト 22 を実行する
+Script23                                          #スクリプト - スクリプト23                         ,スクリプト 23 を実行する
+Script24                                          #スクリプト - スクリプト24                         ,スクリプト 24 を実行する
+Script25                                          #スクリプト - スクリプト25                         ,スクリプト 25 を実行する
+Script26                                          #スクリプト - スクリプト26                         ,スクリプト 26 を実行する
+Script27                                          #スクリプト - スクリプト27                         ,スクリプト 27 を実行する
+Script28                                          #スクリプト - スクリプト28                         ,スクリプト 28 を実行する
+Script29                                          #スクリプト - スクリプト29                         ,スクリプト 29 を実行する
+Script30                                          #スクリプト - スクリプト30                         ,スクリプト 30 を実行する
+Script31                                          #スクリプト - スクリプト31                         ,スクリプト 31 を実行する
+Script32                                          #スクリプト - スクリプト32                         ,スクリプト 32 を実行する
+Script33                                          #スクリプト - スクリプト33                         ,スクリプト 33 を実行する
+Script34                                          #スクリプト - スクリプト34                         ,スクリプト 34 を実行する
+Script35                                          #スクリプト - スクリプト35                         ,スクリプト 35 を実行する
+Script36                                          #スクリプト - スクリプト36                         ,スクリプト 36 を実行する
+Script37                                          #スクリプト - スクリプト37                         ,スクリプト 37 を実行する
+Script38                                          #スクリプト - スクリプト38                         ,スクリプト 38 を実行する
+Script39                                          #スクリプト - スクリプト39                         ,スクリプト 39 を実行する
+Script40                                          #スクリプト - スクリプト40                         ,スクリプト 40 を実行する
+Script41                                          #スクリプト - スクリプト41                         ,スクリプト 41 を実行する
+Script42                                          #スクリプト - スクリプト42                         ,スクリプト 42 を実行する
+Script43                                          #スクリプト - スクリプト43                         ,スクリプト 43 を実行する
+Script44                                          #スクリプト - スクリプト44                         ,スクリプト 44 を実行する
+Script45                                          #スクリプト - スクリプト45                         ,スクリプト 45 を実行する
+Script46                                          #スクリプト - スクリプト46                         ,スクリプト 46 を実行する
+Script47                                          #スクリプト - スクリプト47                         ,スクリプト 47 を実行する
+Script48                                          #スクリプト - スクリプト48                         ,スクリプト 48 を実行する
+Script49                                          #スクリプト - スクリプト49                         ,スクリプト 49 を実行する
+Script50                                          #スクリプト - スクリプト50                         ,スクリプト 50 を実行する
+Script51                                          #スクリプト - スクリプト51                         ,スクリプト 51 を実行する
+Script52                                          #スクリプト - スクリプト52                         ,スクリプト 52 を実行する
+Script53                                          #スクリプト - スクリプト53                         ,スクリプト 53 を実行する
+Script54                                          #スクリプト - スクリプト54                         ,スクリプト 54 を実行する
+Script55                                          #スクリプト - スクリプト55                         ,スクリプト 55 を実行する
+Script56                                          #スクリプト - スクリプト56                         ,スクリプト 56 を実行する
+Script57                                          #スクリプト - スクリプト57                         ,スクリプト 57 を実行する
+Script58                                          #スクリプト - スクリプト58                         ,スクリプト 58 を実行する
+Script59                                          #スクリプト - スクリプト59                         ,スクリプト 59 を実行する
+Script60                                          #スクリプト - スクリプト60                         ,スクリプト 60 を実行する
+Script61                                          #スクリプト - スクリプト61                         ,スクリプト 61 を実行する
+Script62                                          #スクリプト - スクリプト62                         ,スクリプト 62 を実行する
+Script63                                          #スクリプト - スクリプト63                         ,スクリプト 63 を実行する
+Script64                                          #スクリプト - スクリプト64                         ,スクリプト 64 を実行する
+Script65                                          #スクリプト - スクリプト65                         ,スクリプト 65 を実行する
+Script66                                          #スクリプト - スクリプト66                         ,スクリプト 66 を実行する
+Script67                                          #スクリプト - スクリプト67                         ,スクリプト 67 を実行する
+Script68                                          #スクリプト - スクリプト68                         ,スクリプト 68 を実行する
+Script69                                          #スクリプト - スクリプト69                         ,スクリプト 69 を実行する
+Script70                                          #スクリプト - スクリプト70                         ,スクリプト 70 を実行する
+Script71                                          #スクリプト - スクリプト71                         ,スクリプト 71 を実行する
+Script72                                          #スクリプト - スクリプト72                         ,スクリプト 72 を実行する
+ReloadScript                                      #スクリプト - スクリプトリロード                   ,スクリプト情報をリロードする
+ExecuteSelection, Alt+X                           #スクリプト - 選択範囲を実行                       ,選択しているテキストをスクリプトとして実行する
+OpenToolList                                      #ツール - ツールリスト                             ,ユーザ定義ツール管理リストを表示する
+OpenAsciiTable                                    #ツール - アスキーコード表                         ,アスキーコード表を見る
+SyncOutline, Ctrl+Alt+Enter                       #ツール - 対応アウトライン項目                     ,カーソル位置に対応するアウトライン項目を表示する
+AnalyzeOutline, Alt+Shift+Enter                   #ツール - アウトライン解析                         ,アウトライン解析を行い関数/見出しリストを表示する
+AnalizeOutlineCode                                #ツール - 関数アウトライン解析                     ,ソースファイルとしてアウトライン解析を行い関数リストを表示する
+AnalizeOutlineHeadings                            #ツール - 見出しアウトライン解析                   ,テキストとしてアウトライン解析を行い見出しリストを表示する
+AnalizeOutlineHTML                                #ツール - HTMLアウトライン解析                     ,HTMLとしてアウトライン解析を行いタグツリーを表示する
+OpenCustomizeDialog                               #ツール - カスタマイズ                             ,ツールバーをカスタマイズする
+OpenShortcutDialog                                #ツール - ショートカット                           ,ショートカットキーをカスタマイズする
+OpenOptionDialog                                  #ツール - オプション                               ,オプションダイアログボックスを表示する
+SvnUpdate                                         #バージョン管理 - Subversionアップデート           ,バージョン管理ツールSubversionからファイルをアップデートする
+SvnCommit                                         #バージョン管理 - Subversionコミット               ,バージョン管理ツールSubversionへファイルをコミットする
+SvnStatus                                         #バージョン管理 - Subversionステータス             ,指定ファイルのSubversionステータスを表示する
+SvnLog                                            #バージョン管理 - Subversionリビジョンログ         ,指定ファイルのSubversionリビジョンログを表示する
+SvnDiff                                           #バージョン管理 - Subversionリビジョン比較         ,バージョン管理ツールSubversionのBASEリビジョンと比較する
+SvnCheckout                                       #バージョン管理 - Subversionチェックアウト         ,バージョン管理ツールSubversionからファイルをチェックアウトする
+SvnBrowser                                        #バージョン管理 - Subversionリポジトリブラウザ     ,バージョン管理ツールSubversionのリポジトリブラウザを表示する
+SvnMerge                                          #バージョン管理 - Subversionマージ                 ,バージョン管理ツールSubversionを使って変更箇所をマージする
+SvnRepositoryCopy                                 #バージョン管理 - Subversionリポジトリコピー       ,バージョン管理ツールSubversionのリポジトリ内での直接コピーを行う
+CvsUpdate                                         #バージョン管理 - CVSアップデート                  ,バージョン管理ツールCVSからファイルをアップデートする
+CvsCommit                                         #バージョン管理 - CVSコミット                      ,バージョン管理ツールCVSへファイルをコミットする
+CvsStatus                                         #バージョン管理 - CVSステータス                    ,指定ファイルのCVSステータスを表示する
+CvsLog                                            #バージョン管理 - CVSリビジョンログ                ,指定ファイルのCVSリビジョンログを表示する
+CvsDiff                                           #バージョン管理 - CVSリビジョン比較                ,編集中のファイルをCVSのBASEリビジョンと比較する
+CvsOptions                                        #バージョン管理 - CVS設定                          ,CVSの動作オプションを設定する
+RcsGet                                            #バージョン管理 - RCS取り出し                      ,指定ファイルをRCSバージョン管理から取り出す
+RcsCheckout                                       #バージョン管理 - RCSチェックアウト                ,指定ファイルをRCSバージョン管理からチェックアウトする
+RcsCheckin                                        #バージョン管理 - RCSチェックイン                  ,指定ファイルをRCSバージョン管理にチェックインする
+RcsUncheckout                                     #バージョン管理 - RCSチェックアウト取り消し        ,指定ファイルをRCSバージョン管理からのチェックアウトを取り消す
+RcsLog                                            #バージョン管理 - RCSリビジョンログ                ,指定ファイルのRCSバージョン管理ログを表示する
+RcsDiff                                           #バージョン管理 - RCSリビジョン比較                ,編集中のファイルをRCSのHEADリビジョンと比較する
+LogRivisions                                      #バージョン管理 - リビジョンログ                   ,RCS/CVSのリビジョンログを表示する
+DiffRevisions                                     #バージョン管理 - リビジョン比較                   ,編集中のファイルをRCS/CVSのBASEリビジョンと比較する
+VssGet                                            #バージョン管理 - VSS取得                          ,指定ファイルをVSSから取得する
+VssCheckout                                       #バージョン管理 - VSSチェックアウト                ,指定ファイルをVSSからチェックアウトする
+VssCheckin                                        #バージョン管理 - VSSチェックイン                  ,指定ファイルをVSSへチェックインする
+VssUncheckout                                     #バージョン管理 - VSSチェックアウト取り消し        ,指定ファイルのVSSチェックアウトを取り消す
+VssHistory                                        #バージョン管理 - VSS履歴の表示                    ,指定ファイルのVSS履歴を表示する
+VssDiff                                           #バージョン管理 - VSS相違点の表示                  ,指定ファイルのVSS相違点を表示する
+VssAdd                                            #バージョン管理 - VSS追加                          ,指定ファイルをVSSへ追加する
+VssRemove                                         #バージョン管理 - VSS削除                          ,指定ファイルをVSSから削除する
+VssProperties                                     #バージョン管理 - VSSプロパティ                    ,指定ファイルのVSSプロパティを表示する
+ToggleShowProject, Alt+1                          #表示 - プロジェクトウインドウ                     ,プロジェクトウインドウの表示/非表示を切り替える
+ProjectPage, Alt+7                                #表示 - プロジェクトページ                         ,プロジェクトウインドウのプロジェクトページを開く
+WindowListPage, Alt+8                             #表示 - ウインドウリストページ                     ,プロジェクトウインドウのウインドウリストページを開く
+OutlinePage, Alt+9                                #表示 - アウトラインページ                         ,プロジェクトウインドウのアウトラインページを開く
+ScriptPage, Alt+0                                 #表示 - スクリプトページ                           ,プロジェクトウインドウのスクリプトページを開く
+ToggleShowOutput, Alt+2                           #表示 - アウトプットウインドウ                     ,アウトプットウインドウの表示/非表示を切り替える
+ExecutionOutputPage, Ctrl+Shift+1                 #表示 - 実行結果ページを開く                       ,アウトプットウインドウの実行結果ページを開く
+GrepOutputPage, Ctrl+Shift+2                      #表示 - ファイルから検索ページを開く               ,アウトプットウインドウのファイルから検索ページを開く
+DiffFoldersOutputPage, Ctrl+Shift+3               #表示 - フォルダ比較ページを開く                   ,アウトプットウインドウのフォルダ比較ページを開く
+DiffFilesOutputPage, Ctrl+Shift+4                 #表示 - ファイル比較ページを開く                   ,アウトプットウインドウのファイル比較ページを開く
+RevisionOutputPage, Ctrl+Shift+5                  #表示 - バージョン管理ページを開く                 ,アウトプットウインドウのバージョン管理ページを開く
+TagsOutputPage, Ctrl+Shift+6                      #表示 - TAGSページを開く                           ,アウトプットウインドウのTAGSページを開く
+ScriptOutputPage, Ctrl+Shift+7                    #表示 - スクリプトページを開く                     ,アウトプットウインドウのスクリプトページを開く
+DebugOutputPage                                   #表示 - デバッグページを開く                       ,アウトプットウインドウのデバッグページを開く
+StdoutOutputPage                                  #表示 - 標準出力ページを開く                       ,アウトプットウインドウの標準出力ページを開く
+StderrOutputPage                                  #表示 - 標準エラー出力ページを開く                 ,アウトプットウインドウの標準エラー出力ページを開く
+NextOutputPage                                    #表示 - 右のアウトプットページ                     ,アウトプットウインドウの右のページを開く
+PreviousOutputPage                                #表示 - 左のアウトプットページ                     ,アウトプットウインドウの左のページを開く
+ToggleShowWindowList, Alt+3                       #表示 - ウインドウリスト                           ,ウインドウリストの表示/非表示を切り替える
+ToggleShowWindowTab, Alt+4                        #表示 - ウインドウタブ                             ,ウインドウタブの表示/非表示を切り替える
+ToggleShowNewline                                 #表示 - 改行/EOF記号表示の切り替え                 ,改行とEOFの表示/非表示を切り替える
+ToggleShowTab                                     #表示 - タブ表示の切り替え                         ,タブ文字の表示/非表示を切り替える
+ToggleShowAsciiSpace                              #表示 - 半角スペース表示の切り替え                 ,半角スペースの表示/非表示を切り替える
+ToggleShowKanjiSpace                              #表示 - 全角スペース表示の切り替え                 ,全角スペースの表示/非表示を切り替える
+ToggleKeywordTip                                  #表示 - キーワードチップ表示の切り替え             ,キーワードチップの表示/非表示を切り替える
+ToggleShowRuler                                   #表示 - ルーラー                                   ,ルーラーの表示/非表示を切り替える
+ToggleShowOuter                                   #表示 - テキスト外領域                             ,テキスト外領域の表示/非表示を切り替える
+ToggleShowGuideline                               #表示 - ガイドライン表示の切り替え                 ,ガイドラインの表示/非表示を切り替える
+ToggleGuidelineAtCursor                           #表示 - カーソル位置のガイドライン                 ,カーソル位置のガイドラインを表示切り替える
+ClearGuidelines                                   #表示 - 言語のガイドライン設定をクリア             ,言語のガイドライン設定をクリアする
+ClearAllGuidelines                                #表示 - すべての言語のガイドライン設定をクリア     ,すべての言語のガイドライン設定をクリアする
+ChangeLineNumber                                  #表示 - 行番号表示の切り替え                       ,行番号表示を切り替える
+ChangeLineCursor                                  #表示 - 行カーソルの切り替え                       ,行カーソルの種類を切り替える
+ChangeColumnCursor                                #表示 - 桁カーソルの切り替え                       ,桁カーソルの種類を切り替える
+ChangeShowTouched                                 #表示 - 変更行表示の切り替え                       ,変更行情報の表示方法を切り替える
+FileLineNumberMode                                #表示 - ファイル行番号                             ,ファイル行単位で行番号を表示する
+ViewLineNumberMode                                #表示 - 表示行番号                                 ,表示行単位で行番号を表示する
+SelectToolbars                                    #表示 - ツールバー                                 ,ツールバーの表示/非表示を切り替える
+ToggleStatusBar                                   #表示 - ステータスバー                             ,ステータスバーの表示/非表示を切り替える
+RefreshWindow                                     #表示 - リフレッシュ                               ,ウインドウをリフレッシュする
+RelayoutWindow, Ctrl+Shift+Enter                  #表示 - レイアウト変更                             ,レイアウトの方法を変更する
+ClearBackground                                   #表示 - ファイル比較背景のクリア                   ,ファイル比較の相違行を表示している背景をクリアする
+NewWindow                                         #ウインドウ - 新しいウインドウを開く               ,作業中のウインドウを複写して表示する
+CloseWindow                                       #ウインドウ - 閉じる                               ,作業中のウインドウを閉じる
+OpenWindowList, Ctrl+Enter                        #ウインドウ - ウインドウ選択                       ,ウインドウを選択する
+MaximizeWindow                                    #ウインドウ - 最大化する                           ,ウインドウを最大化する
+MinimizeWindow                                    #ウインドウ - 最小化する                           ,ウインドウを最小化する
+RestoreWindowSize                                 #ウインドウ - 元のサイズに戻す                     ,ウインドウを元のサイズに戻す
+MaxWindowSize                                     #ウインドウ - 大きく表示する                       ,ウインドウをできるだけ大きく表示する
+EnlargeWindowVertically                           #ウインドウ - 上下いっぱいに表示                   ,ウインドウを上下いっぱいに表示する
+EnlargeWindowHorizontally                         #ウインドウ - 左右いっぱいに表示                   ,ウインドウを左右いっぱいに表示する
+UpperHalfWindow                                   #ウインドウ - 上半分に表示                         ,ウインドウを上半分に表示する
+LowerHalfWindow                                   #ウインドウ - 下半分に表示                         ,ウインドウを下半分に表示する
+LeftHalfWindow                                    #ウインドウ - 左半分に表示                         ,ウインドウを左半分に表示する
+RightHalfWindow                                   #ウインドウ - 右半分に表示                         ,ウインドウを右半分に表示する
+TileTwoWindowsHorizontally                        #ウインドウ - 2つを上下に並べて表示                ,2つのウインドウを上下に並べて表示する
+TileTwoWindowsVertically                          #ウインドウ - 2つを左右に並べて表示                ,2つのウインドウを左右に並べて表示する
+SplitWindow                                       #ウインドウ - 分割                                 ,作業中のウインドウを分割する
+SplitWindowHorizontally, Ctrl+Shift+H             #ウインドウ - 上下に分割                           ,ウインドウを上下に分割する
+SplitWindowVertically                             #ウインドウ - 左右に分割                           ,ウインドウを左右に分割する
+CancelSplit                                       #ウインドウ - 分割解除                             ,ウインドウの分割をやめて1つの領域にする
+ToggleWindowRecycle                               #ウインドウ - 編集ウインドウリサイクルの切替       ,編集ウインドウのリサイクル可・不可を切り替える
+CascadeWindow                                     #ウインドウ - 重ねて表示                           ,ウインドウを重ねて表示する
+TileWindowHorizontally                            #ウインドウ - 上下に並べて表示                     ,ウインドウを上下に並べて表示する
+TileWindowVertically, Ctrl+Shift+W                #ウインドウ - 左右に並べて表示                     ,ウインドウを左右に並べて表示する
+ArrangeIcons                                      #ウインドウ - アイコンの整列                       ,ウインドウの下部にアイコンを整列する
+CloseAllWindows                                   #ウインドウ - すべて閉じる                         ,ウインドウをすべて閉じる
+NextWindow                                        #ウインドウ - 次のウインドウ                       ,次のウインドウに切り替える
+PreviousWindow                                    #ウインドウ - 前のウインドウ                       ,前のウインドウに切り替える
+NextPane, F6                                      #ウインドウ - 次のペイン                           ,次のウインドウペインに切り替える
+PreviousPane, Shift+F6                            #ウインドウ - 前のペイン                           ,前のウインドウペインに切り替える
+EnlargePaneVertically, Alt+F6                     #ウインドウ - ペインを縦に拡大                     ,ウインドウのペインの大きさを縦に拡大する
+ShrinkPaneVertically, Alt+Shift+F6                #ウインドウ - ペインを縦に縮小                     ,ウインドウのペインの大きさを縦に縮小する
+EnlargePaneHorizontally, Ctrl+Alt+F6              #ウインドウ - ペインを横に拡大                     ,ウインドウのペインの大きさを横に拡大する
+ShrinkPaneHorizontally, Ctrl+Alt+Shift+F6         #ウインドウ - ペインを横に縮小                     ,ウインドウのペインの大きさを横に縮小する
+NextWindowOnTab                                   #ウインドウ - 左のタブのウインドウ                 ,ウインドウタブの左隣のウインドウを編集する
+PreviousWindowOnTab                               #ウインドウ - 右のタブのウインドウ                 ,ウインドウタブの右隣のウインドウを編集する
+FirstWindowOnTab                                  #ウインドウ - 左端のタブのウインドウ               ,ウインドウタブの左端のウインドウを編集する
+LastWindowOnTab                                   #ウインドウ - 右端のタブのウインドウ               ,ウインドウタブの右端のウインドウを編集する
+SwapPreviousWindowOnTab                           #ウインドウ - 左隣のタブと入れ替え                 ,ウインドウタブの左隣のタブと入れ替える
+SwapNextWindowOnTab                               #ウインドウ - 右隣のタブと入れ替え                 ,ウインドウタブの右隣のタブと入れ替える
+CopyOutputWindow                                  #ウインドウ - ウインドウへ保存                     ,新規編集ウインドウを作成してアウトプットウインドウの内容をコピーする
+Help, F1                                          #ヘルプ - ヘルプを表示                             ,現在のタスクまたはコマンドのヘルプを表示する
+HelpTOC                                           #ヘルプ - 目次                                     ,ヘルプトピックの一覧を表示する
+HelpFinder                                        #ヘルプ - トピックの検索                           ,トピックの検索を行う
+KeywordHelp, Ctrl+F1                              #ヘルプ - キーワードヘルプ                         ,カーソル位置の単語をキーワードとしてヘルプファイルを開く
+ContextHelp, Shift+F1                             #ヘルプ - 状況ヘルプを表示                         ,クリックされたボタン、メニューまたはウインドウのヘルプを表示する
+OpenUsersGuide                                    #ヘルプ - ユーザーズマニュアル                     ,オンラインユーザーズマニュアルを開く
+AboutPeggy                                        #ヘルプ - バージョン情報                           ,Peggy Pro for PHPの情報、バージョンと著作権を表示する
+NoOperation                                       #その他 - 何もしないコマンド                       ,間違いやすいキーの意味を無くすための何もしないコマンド
